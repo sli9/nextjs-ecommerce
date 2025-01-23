@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f12c202-f0fd-4ad0-ab3e-0a06ce88ccea" name="Changes" comment="">
-      <change afterPath="D:/nextjs-ecommerce/prettier.config.js" afterDir="false" />
-      <change afterPath="D:/nextjs-ecommerce/src/app/lib/db/prisma.ts" afterDir="false" />
-      <change afterPath="D:/nextjs-ecommerce/src/assets/logo.png" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/.gitignore" beforeDir="false" afterPath="D:/nextjs-ecommerce/.gitignore" afterDir="false" />
+    <list default="true" id="7f12c202-f0fd-4ad0-ab3e-0a06ce88ccea" name="Changes" comment="Initial project config(prisma, daisyui, eslint, prettier)">
+      <change afterPath="D:/nextjs-ecommerce/src/app/add-product/page.tsx" afterDir="false" />
+      <change afterPath="D:/nextjs-ecommerce/src/app/error.tsx" afterDir="false" />
+      <change afterPath="D:/nextjs-ecommerce/src/components/FormSubmitButton.tsx" afterDir="false" />
       <change beforePath="D:/nextjs-ecommerce/.idea/workspace.xml" beforeDir="false" afterPath="D:/nextjs-ecommerce/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/eslint.config.mjs" beforeDir="false" afterPath="D:/nextjs-ecommerce/eslint.config.mjs" afterDir="false" />
       <change beforePath="D:/nextjs-ecommerce/next.config.ts" beforeDir="false" afterPath="D:/nextjs-ecommerce/next.config.ts" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/package-lock.json" beforeDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/package.json" beforeDir="false" afterPath="D:/nextjs-ecommerce/package.json" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/src/app/favicon.ico" beforeDir="false" afterPath="D:/nextjs-ecommerce/src/app/favicon.ico" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/src/app/globals.css" beforeDir="false" afterPath="D:/nextjs-ecommerce/src/app/globals.css" afterDir="false" />
       <change beforePath="D:/nextjs-ecommerce/src/app/layout.tsx" beforeDir="false" afterPath="D:/nextjs-ecommerce/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/src/app/page.tsx" beforeDir="false" afterPath="D:/nextjs-ecommerce/src/app/page.tsx" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/tailwind.config.ts" beforeDir="false" afterPath="D:/nextjs-ecommerce/tailwind.config.ts" afterDir="false" />
+      <change beforePath="D:/nextjs-ecommerce/src/app/lib/db/prisma.ts" beforeDir="false" afterPath="D:/nextjs-ecommerce/src/app/lib/db/prisma.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +19,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="D:/nextjs-ecommerce" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="D:/nextjs-ecommerce" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -40,7 +38,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/add-product-page",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/films/.prettierrc.js",
     "node.js.detected.package.eslint": "true",
@@ -52,7 +50,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "D:\\nextjs-ecommerce\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "D:\\nextjs-ecommerce\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -71,11 +69,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737644961291</updated>
-      <workItem from="1737644962162" duration="6293000" />
+      <workItem from="1737644962162" duration="16423000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial project config(prisma, daisyui, eslint, prettier)">
+      <option name="closed" value="true" />
+      <created>1737651749900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737651749900</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial project config(prisma, daisyui, eslint, prettier)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial project config(prisma, daisyui, eslint, prettier)" />
   </component>
 </project>
