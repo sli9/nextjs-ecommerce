@@ -13,7 +13,7 @@ export const ProductCard = ({ product }: Props) => {
   return (
     <Link
       className={'card w-full bg-base-100 transition-shadow hover:shadow-xl'}
-      href={'/products' + product.id}
+      href={'/products/' + product.id}
     >
       <div className={'card card-compact bg-base-100'}>
         <figure>
