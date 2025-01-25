@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f12c202-f0fd-4ad0-ab3e-0a06ce88ccea" name="Changes" comment="Initial project config(prisma, daisyui, eslint, prettier)">
-      <change afterPath="D:/nextjs-ecommerce/src/app/add-product/page.tsx" afterDir="false" />
-      <change afterPath="D:/nextjs-ecommerce/src/app/error.tsx" afterDir="false" />
-      <change afterPath="D:/nextjs-ecommerce/src/components/FormSubmitButton.tsx" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/.idea/workspace.xml" beforeDir="false" afterPath="D:/nextjs-ecommerce/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/next.config.ts" beforeDir="false" afterPath="D:/nextjs-ecommerce/next.config.ts" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/src/app/layout.tsx" beforeDir="false" afterPath="D:/nextjs-ecommerce/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="D:/nextjs-ecommerce/src/app/lib/db/prisma.ts" beforeDir="false" afterPath="D:/nextjs-ecommerce/src/app/lib/db/prisma.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prettier.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +19,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="D:/nextjs-ecommerce" value="master" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="D:/nextjs-ecommerce" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2s2DpeUNf7qsCUXgOPPP37FmK0x" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,9 +36,9 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "feature/add-product-page",
+    "git-widget-placeholder": "fix/eslint-config-fix",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/films/.prettierrc.js",
+    "last_opened_file_path": "D:/untitled/.eslintrc.json",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
