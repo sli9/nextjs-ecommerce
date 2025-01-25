@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss'
 
+import daisyui from 'daisyui'
+
 export default {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,21 +12,21 @@ export default {
     themes: [
       {
         lightTheme: {
-          primary: '#0b00ff',
-          secondary: '#009d00',
           accent: '#007000',
-          neutral: '#00201f',
           'base-100': '#fffcea',
-          info: '#008af5',
-          success: '#00fd73',
-          warning: '#dfa500',
-          error: '#ff5e79',
           body: {
             background: '#e3e6e6',
           },
+          error: '#ff5e79',
+          info: '#2db0fa',
+          neutral: '#00201f',
+          primary: '#0051ff',
+          secondary: '#009d00',
+          success: '#00fd73',
+          warning: '#dfa500',
         },
       },
     ],
   },
-  plugins: [require('daisyui')],
+  plugins: [daisyui],
 } satisfies Config

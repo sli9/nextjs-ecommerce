@@ -1,6 +1,6 @@
-import { prisma } from '@/app/lib/db/prisma'
+import { FormSubmitButton } from '@/components/FormSubmitButton'
+import { prisma } from '@/lib/db/prisma'
 import { redirect } from 'next/navigation'
-import {FormSubmitButton} from "@/components/FormSubmitButton";
 
 export const metadata = {
   title: 'Add Product | EcE',
@@ -18,7 +18,7 @@ const addProduct = async (formData: FormData) => {
   }
 
   await prisma.product.create({
-    data: { name, description, imgUrl, price },
+    data: { description, imgUrl, name, price },
   })
 
   redirect('/')
@@ -30,34 +30,32 @@ export default function AddProduct() {
       <h1 className={'mb-3 text-lg'}>Add Product</h1>
       <form action={addProduct}>
         <input
-          required
+          className={'input input-bordered input-primary mb-3 w-full'}
           name={'name'}
           placeholder={'Type a product name'}
-          className={'input input-bordered input-primary mb-3 w-full'}
+          required
         />
         <textarea
-          required
+          className={'textarea textarea-bordered textarea-primary mb-3 w-full'}
           name={'description'}
           placeholder={'Describe your product'}
-          className={'textarea textarea-bordered textarea-primary mb-3 w-full'}
+          required
         />
         <input
-          required
+          className={'input input-bordered input-primary mb-3 w-full'}
           name={'imageUrl'}
-          type={'url'}
           placeholder={'Provide an image url'}
-          className={'input input-bordered input-primary mb-3 w-full'}
+          required
+          type={'url'}
         />
         <input
-          required
-          name={'price'}
-          type={'number'}
-          placeholder={'Type a price'}
           className={'input input-bordered input-primary mb-3 w-full'}
+          name={'price'}
+          placeholder={'Type a price'}
+          required
+          type={'number'}
         />
-        <FormSubmitButton>
-          Add Product
-        </FormSubmitButton>
+        <FormSubmitButton>Add Product</FormSubmitButton>
       </form>
     </div>
   )

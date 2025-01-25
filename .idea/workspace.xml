@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f12c202-f0fd-4ad0-ab3e-0a06ce88ccea" name="Changes" comment="Initial project config(prisma, daisyui, eslint, prettier)">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="7f12c202-f0fd-4ad0-ab3e-0a06ce88ccea" name="Changes" comment="fix eslint and prettier configs">
+      <change afterPath="$PROJECT_DIR$/src/components/PriceLabel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/formatPrice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prettier.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/add-product/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/add-product/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/error.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/db/prisma.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db/prisma.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormSubmitButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormSubmitButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +31,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sli9"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:/sli9/nextjs-ecommerce.git",
+    "accountId": "af079bf2-35c4-45e7-8df1-d4ffb91e1a45"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -35,8 +54,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "fix/eslint-config-fix",
+    "git-widget-placeholder": "feature/get-products-page",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/untitled/.eslintrc.json",
     "node.js.detected.package.eslint": "true",
@@ -55,9 +75,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\nextjs-ecommerce\src\lib" />
       <recent name="D:\nextjs-ecommerce\src" />
       <recent name="D:\nextjs-ecommerce\src\app\assets" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,6 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737644961291</updated>
       <workItem from="1737644962162" duration="16423000" />
+      <workItem from="1737808580651" duration="6958000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project config(prisma, daisyui, eslint, prettier)">
       <option name="closed" value="true" />
@@ -77,7 +106,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737651749900</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix eslint and prettier configs">
+      <option name="closed" value="true" />
+      <created>1737801647918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737801647918</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix eslint and prettier configs">
+      <option name="closed" value="true" />
+      <created>1737802162352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737802162352</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial project config(prisma, daisyui, eslint, prettier)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial project config(prisma, daisyui, eslint, prettier)" />
+    <MESSAGE value="fix eslint and prettier configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix eslint and prettier configs" />
   </component>
 </project>
