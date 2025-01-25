@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f12c202-f0fd-4ad0-ab3e-0a06ce88ccea" name="Changes" comment="fix eslint and prettier configs">
-      <change afterPath="$PROJECT_DIR$/src/components/PriceLabel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/formatPrice.ts" afterDir="false" />
+    <list default="true" id="7f12c202-f0fd-4ad0-ab3e-0a06ce88ccea" name="Changes" comment="add products page with card for each item">
+      <change afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/add-product/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/add-product/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/db/prisma.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/db/prisma.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormSubmitButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormSubmitButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +23,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sli9"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sli9&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:/sli9/nextjs-ecommerce.git",
-    "accountId": "af079bf2-35c4-45e7-8df1-d4ffb91e1a45"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:/sli9/nextjs-ecommerce.git&quot;,
+    &quot;accountId&quot;: &quot;af079bf2-35c4-45e7-8df1-d4ffb91e1a45&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -56,9 +48,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "feature/get-products-page",
+    "git-widget-placeholder": "feature/not-found-page",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/untitled/.eslintrc.json",
+    "last_opened_file_path": "D:/paralect-startupsummer/tmdb-movie/src/components/ErrorPage.tsx",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,6 +89,7 @@
       <updated>1737644961291</updated>
       <workItem from="1737644962162" duration="16423000" />
       <workItem from="1737808580651" duration="6958000" />
+      <workItem from="1737823117723" duration="4307000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project config(prisma, daisyui, eslint, prettier)">
       <option name="closed" value="true" />
