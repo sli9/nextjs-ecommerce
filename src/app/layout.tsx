@@ -1,5 +1,9 @@
 import type { Metadata } from 'next'
 
+import { ReactNode } from 'react'
+
+import { Navbar } from '@/app/(navbar)/Navbar'
+import Footer from '@/app/footer/Footer'
 import { Geist, Geist_Mono } from 'next/font/google'
 
 import './globals.css'
@@ -22,12 +26,14 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
     <html lang={'en'}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navbar />
         <main className={'m-auto min-w-[320px] max-w-7xl p-4'}>{children}</main>
+        <Footer />
       </body>
     </html>
   )
