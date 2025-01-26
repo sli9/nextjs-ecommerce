@@ -17,7 +17,7 @@ export const ProductCard = ({ product }: Props) => {
     >
       <div className={'card card-compact bg-base-100'}>
         <figure>
-          {/* height and width indicate the size of the image, that Next.js will resize on server side. */}
+          {/* both width and height properties are used to determine the aspect ratio of the image which used by browsers to reserve space for the image before it loads */}
           <Image
             alt={product.name}
             className={'h-48 object-cover'}

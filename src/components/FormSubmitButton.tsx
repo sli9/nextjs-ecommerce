@@ -13,7 +13,7 @@ export const FormSubmitButton = ({ children, classname, ...rest }: FormSubmitBut
 
   return (
     <button className={`btn btn-primary ${classname}`} disabled={pending} type={'submit'} {...rest}>
-      {pending && <span className={'loading loading-ball loading-lg'}></span>}
+      {pending && <span className={'loading loading-ball loading-lg'} />}
       {children}
     </button>
   )

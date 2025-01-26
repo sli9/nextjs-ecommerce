@@ -1,9 +1,10 @@
 'use client'
+import { ShoppingCart } from '@/lib/db/cart'
 import { formatPrice } from '@/lib/formatPrice'
 import Link from 'next/link'
 
 type Props = {
-  cart: { size: number; subtotal: number } | null
+  cart: ShoppingCart | null
 }
 
 const closeDropdownHandler = () => {
@@ -18,7 +19,7 @@ export const ShoppingCartButton = ({ cart }: Props) => {
       <div className={'btn btn-circle btn-ghost'} role={'button'} tabIndex={0}>
         <div className={'indicator'}>
           <svg
-            className={'h-5 w-5'}
+            className={'h-7 w-7'}
             fill={'none'}
             stroke={'currentColor'}
             viewBox={'0 0 24 24'}
@@ -33,7 +34,9 @@ export const ShoppingCartButton = ({ cart }: Props) => {
               strokeWidth={'2'}
             />
           </svg>
-          {cart && <span className={'badge indicator-item badge-sm'}>{cart?.size}</span>}
+          {cart && (
+            <span className={'badge indicator-item badge-warning badge-sm'}>{cart?.size}</span>
+          )}
         </div>
       </div>
       <div

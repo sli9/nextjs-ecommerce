@@ -22,7 +22,7 @@ export default {
           neutral: '#00201f',
           primary: '#0051ff',
           secondary: '#009d00',
-          success: '#00fd73',
+          success: '#51dc62',
           warning: '#dfa500',
         },
       },

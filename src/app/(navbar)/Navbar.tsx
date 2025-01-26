@@ -1,5 +1,6 @@
 import { ShoppingCartButton } from '@/app/(navbar)/ShoppingCartButton'
 import logo from '@/assets/logo.png'
+import { getCart } from '@/lib/db/cart'
 import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
@@ -14,7 +15,9 @@ const searchProducts = async (formData: FormData) => {
   }
 }
 
-export const Navbar = () => {
+export const Navbar = async () => {
+  const cart = await getCart()
+
   return (
     <div className={'navbar bg-base-100'}>
       <div className={'flex-1'}>
@@ -34,7 +37,7 @@ export const Navbar = () => {
             />
           </div>
         </form>
-        <ShoppingCartButton cart={{ size: 3, subtotal: 24 }} />
+        <ShoppingCartButton cart={cart} />
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import { cache } from 'react'
 
+import { AddToCartButton } from '@/components/AddToCartButton'
 import { PriceLabel } from '@/components/PriceLabel'
 import { prisma } from '@/lib/db/prisma'
 import { Metadata } from 'next'
@@ -38,7 +39,7 @@ export default async function ProductPage({ params }: Props) {
   const product = await getProduct(id)
 
   return (
-    <div className={'flex flex-col items-center gap-4 lg:flex-row'}>
+    <div className={'h-lvhvh flex flex-col items-center gap-4 lg:flex-row'}>
       <Image
         alt={product.name}
         className={'rounded-lg object-cover'}
@@ -51,6 +52,7 @@ export default async function ProductPage({ params }: Props) {
         <h1 className={'text-3xl font-bold'}>{product.name}</h1>
         <PriceLabel className={'mt-4'} price={product.price} />
         <p className={'py-6'}>{product.description}</p>
+        <AddToCartButton productId={product.id} />
       </div>
     </div>
   )

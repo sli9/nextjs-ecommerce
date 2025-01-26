@@ -6,5 +6,5 @@ type Props = {
 }
 
 export const PriceLabel = ({ className, price }: Props) => {
-  return <span className={`badge badge-primary ${className}`}>{formatPrice(price)}</span>
+  return <span className={`badge ${className}`}>{formatPrice(price)}</span>
 }
