@@ -5,7 +5,7 @@ import { cookies } from 'next/headers'
 type CartWithProducts = Prisma.CartGetPayload<{
   include: { items: { include: { product: true } } }
 }>
-
+export type CartItemWithProduct = Prisma.CartItemGetPayload<{ include: { product: true } }>
 export type ShoppingCart = { size: number; subtotal: number } & CartWithProducts
 
 export const createCart = async (): Promise<ShoppingCart> => {

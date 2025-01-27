@@ -2,6 +2,7 @@ import { cache } from 'react'
 
 import { AddToCartButton } from '@/components/AddToCartButton'
 import { PriceLabel } from '@/components/PriceLabel'
+import { getCart } from '@/lib/db/cart'
 import { prisma } from '@/lib/db/prisma'
 import { Metadata } from 'next'
 import Image from 'next/image'
@@ -37,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductPage({ params }: Props) {
   const { id } = await params
   const product = await getProduct(id)
+  const cart = await getCart()
 
   return (
     <div className={'h-lvhvh flex flex-col items-center gap-4 lg:flex-row'}>
@@ -52,7 +54,7 @@ export default async function ProductPage({ params }: Props) {
         <h1 className={'text-3xl font-bold'}>{product.name}</h1>
         <PriceLabel className={'mt-4'} price={product.price} />
         <p className={'py-6'}>{product.description}</p>
-        <AddToCartButton productId={product.id} />
+        <AddToCartButton cart={cart} productId={product.id} />
       </div>
     </div>
   )

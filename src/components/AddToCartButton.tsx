@@ -3,14 +3,18 @@
 import { useState, useTransition } from 'react'
 
 import { incrementCartItemsQuantity } from '@/app/products/[id]/actions'
+import { ShoppingCart } from '@/lib/db/cart'
 
 type Props = {
+  cart: ShoppingCart | null
   productId: string
 }
 
-export const AddToCartButton = ({ productId }: Props) => {
+export const AddToCartButton = ({ cart, productId }: Props) => {
   const [isPending, startTransition] = useTransition()
   const [success, setSuccess] = useState<boolean>(false)
+
+  const ProductInCart = cart?.items.find(item => item.product.id === productId)
 
   return (
     <div className={'flex items-center gap-2'}>
@@ -26,7 +30,13 @@ export const AddToCartButton = ({ productId }: Props) => {
         }}
         type={'button'}
       >
-        Add to cart
+        {ProductInCart ? (
+          <span>
+            In the cart <span className={'badge badge-warning'}>{ProductInCart.quantity}</span>
+          </span>
+        ) : (
+          'Add to cart'
+        )}
         <svg
           className={'h-5 w-5'}
           fill={'none'}
