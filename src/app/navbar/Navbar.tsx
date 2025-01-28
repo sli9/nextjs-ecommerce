@@ -1,22 +1,12 @@
 import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { SearchForm } from '@/app/navbar/SearchForm'
 import { ShoppingCartButton } from '@/app/navbar/ShoppingCartButton'
 import { UserMenuButton } from '@/app/navbar/UserMenuButton'
 import logo from '@/assets/logo.png'
 import { getCart } from '@/lib/db/cart'
 import Image from 'next/image'
 import Link from 'next/link'
-import { redirect } from 'next/navigation'
 import { getServerSession } from 'next-auth'
-
-const searchProducts = async (formData: FormData) => {
-  'use server'
-
-  const searchQuery = formData.get('searchQuery')?.toString()
-
-  if (!searchQuery) {
-    redirect('/search?query=' + searchQuery)
-  }
-}
 
 export const Navbar = async () => {
   const cart = await getCart()
@@ -31,16 +21,7 @@ export const Navbar = async () => {
         </Link>
       </div>
       <div className={'flex-none gap-3.5'}>
-        <form action={searchProducts}>
-          <div className={'form-control'}>
-            <input
-              className={'input input-bordered w-full min-w-80'}
-              name={'searchQuery'}
-              placeholder={'Search'}
-              type={'text'}
-            />
-          </div>
-        </form>
+        <SearchForm />
         <ShoppingCartButton cart={cart} />
         <UserMenuButton session={session} />
       </div>

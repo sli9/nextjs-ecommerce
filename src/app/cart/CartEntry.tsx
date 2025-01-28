@@ -24,7 +24,9 @@ export const CartEntry = ({ cartItem: { product, quantity } }: Props) => {
   const changeQuantityHandler = (e: ChangeEvent<HTMLSelectElement>) => {
     const newQuantity = Number(e.target.value)
 
-    startTransition(() => setProductQuantity(product.id, newQuantity))
+    startTransition(async () => {
+      await setProductQuantity(product.id, newQuantity)
+    })
   }
 
   return (

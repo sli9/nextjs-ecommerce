@@ -4,10 +4,11 @@ import Link from 'next/link'
 
 type Props = {
   currentPage: number
+  query: string
   totalPages: number
 }
 
-export const PaginationBar = ({ currentPage, totalPages }: Props) => {
+export const PaginationBar = ({ currentPage, query, totalPages }: Props) => {
   const maxPage = Math.min(totalPages, Math.max(currentPage + 4, 10))
   const minPage = Math.max(1, Math.min(currentPage - 5, maxPage - 9))
 
@@ -17,7 +18,7 @@ export const PaginationBar = ({ currentPage, totalPages }: Props) => {
     numberedPageItems.push(
       <Link
         className={`btn join-item ${currentPage === page ? 'btn-active pointer-events-none' : ''}`}
-        href={'?page=' + page}
+        href={`?page=${page}&query=${query}`}
         key={page}
       >
         {page}

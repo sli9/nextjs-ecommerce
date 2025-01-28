@@ -4,22 +4,36 @@ import { prisma } from '@/lib/db/prisma'
 import Link from 'next/link'
 
 type Props = {
-  searchParams: Promise<{ page?: string }>
+  searchParams: Promise<{ page?: string; query?: string }>
 }
 
 export default async function Home({ searchParams }: Props) {
-  const { page = '1' } = await searchParams
+  const { page = '1', query = '' } = await searchParams
   const currentPage = Number(page)
 
   const pageSize = 6
   const heroItemCount = 1
-  const totalItemsCount = await prisma.product.count()
+  const totalItemsCount = await prisma.product.count({
+    where: {
+      OR: [
+        { name: { contains: query, mode: 'insensitive' } },
+        { description: { contains: query, mode: 'insensitive' } },
+      ],
+    },
+  })
+
   const totalPages = Math.ceil((totalItemsCount - heroItemCount) / pageSize)
 
   const products = await prisma.product.findMany({
     orderBy: { id: 'desc' },
     skip: (currentPage - 1) * pageSize + (currentPage === 1 ? 0 : heroItemCount),
     take: pageSize + (currentPage === 1 ? heroItemCount : 0),
+    where: {
+      OR: [
+        { name: { contains: query, mode: 'insensitive' } },
+        { description: { contains: query, mode: 'insensitive' } },
+      ],
+    },
   })
 
   return (
@@ -48,7 +62,9 @@ export default async function Home({ searchParams }: Props) {
           <ProductCard key={p.id} product={p} />
         ))}
       </div>
-      {totalPages > 1 && <PaginationBar currentPage={currentPage} totalPages={totalPages} />}
+      {totalPages > 1 && (
+        <PaginationBar currentPage={currentPage} query={query} totalPages={totalPages} />
+      )}
     </div>
   )
 }
