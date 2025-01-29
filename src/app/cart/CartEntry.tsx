@@ -31,10 +31,10 @@ export const CartEntry = ({ cartItem: { product, quantity } }: Props) => {
 
   return (
     <div>
-      <div className={'flex h-64 flex-wrap items-center gap-4 rounded-lg'}>
+      <div className={'flex flex-wrap items-center gap-4 rounded-lg'}>
         <Image
           alt={product.name}
-          className={'h-full rounded-lg object-cover'}
+          className={'h-64 rounded-lg object-cover'}
           height={300}
           src={product.imgUrl}
           width={300}
