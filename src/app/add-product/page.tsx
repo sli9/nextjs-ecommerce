@@ -1,4 +1,4 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/auth-options'
 import { FormSubmitButton } from '@/components/FormSubmitButton'
 import { prisma } from '@/lib/db/prisma'
 import { redirect } from 'next/navigation'

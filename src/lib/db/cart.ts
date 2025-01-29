@@ -1,4 +1,4 @@
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/auth-options'
 import { prisma } from '@/lib/db/prisma'
 import { Cart, CartItem, Prisma } from '@prisma/client'
 import { cookies } from 'next/headers'
