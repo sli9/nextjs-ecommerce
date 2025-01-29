@@ -26,6 +26,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      zod:
+        specifier: ^3.24.1
+        version: 3.24.1
     devDependencies:
       '@auth/prisma-adapter':
         specifier: ^2.7.4
@@ -69,9 +72,6 @@ importers:
       typescript:
         specifier: ^5
         version: 5.7.3
-      zod:
-        specifier: ^3.24.1
-        version: 3.24.1
 
 packages:
 
