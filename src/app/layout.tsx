@@ -35,7 +35,9 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SessionProvider>
           <Navbar />
-          <main className={'m-auto min-w-[320px] max-w-7xl p-4'}>{children}</main>
+          <main className={'m-auto flex h-screen min-w-[320px] max-w-7xl flex-col p-4'}>
+            {children}
+          </main>
           <Footer />
         </SessionProvider>
       </body>
