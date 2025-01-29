@@ -18,7 +18,7 @@ export const SearchForm = ({ query }: Props) => {
           type={'text'}
         />
         <div className={'flex items-center gap-2'}>
-          {query && <SearchFormReset />}
+          <SearchFormReset />
           <FormSubmitButton className={'btn-sm rounded-full'}>
             <svg
               viewBox={'0 0 50 50'}

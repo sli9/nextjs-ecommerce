@@ -8,11 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getServerSession } from 'next-auth'
 
-type Props = {
-  query: string
-}
-
-export const Navbar = async ({ query }: Props) => {
+export const Navbar = async () => {
   const cart = await getCart()
   const session = await getServerSession(authOptions)
 
@@ -25,7 +21,7 @@ export const Navbar = async ({ query }: Props) => {
         </Link>
       </div>
       <div className={'flex-none gap-3.5'}>
-        <SearchForm query={query} />
+        <SearchForm />
         <ShoppingCartButton cart={cart} />
         <UserMenuButton session={session} />
       </div>
