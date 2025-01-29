@@ -8,7 +8,11 @@ type Props = {
 
 export const SearchForm = ({ query }: Props) => {
   return (
-    <Form action={'/'} className={'search-form order-last max-w-80 sm:w-full'} scroll={false}>
+    <Form
+      action={'/'}
+      className={'search-form order-3 max-w-80 sm:order-none sm:w-full'}
+      scroll={false}
+    >
       <label className={'input input-bordered flex w-full items-center gap-2'}>
         <input
           className={'grow'}

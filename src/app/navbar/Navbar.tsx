@@ -13,7 +13,7 @@ export const Navbar = async () => {
   const session = await getServerSession(authOptions)
 
   return (
-    <div className={'navbar flex flex-wrap justify-center bg-base-100'}>
+    <div className={'navbar flex flex-wrap justify-center gap-3.5 bg-base-100'}>
       <div className={'flex-1'}>
         <Link className={'btn btn-ghost text-xl'} href={'/'}>
           <Image alt={'ecommerce logo'} height={40} src={logo} width={40} />
