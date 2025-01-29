@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang={'en'}>
       <body
-        className={`flex h-screen flex-col ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`flex min-h-screen flex-col ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SessionProvider>
           <Navbar />
