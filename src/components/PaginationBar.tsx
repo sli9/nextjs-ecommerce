@@ -39,7 +39,7 @@ export const PaginationBar = ({ currentPage, query, totalPages }: Props) => {
           Page {currentPage}
         </button>
         {currentPage < totalPages && (
-          <Link className={'btn join-item'} href={'?page=' + (currentPage - 1)}>
+          <Link className={'btn join-item'} href={'?page=' + (currentPage + 1)}>
             »
           </Link>
         )}

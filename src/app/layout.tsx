@@ -37,7 +37,7 @@ export default function RootLayout({
       >
         <SessionProvider>
           <Navbar />
-          <main className={'m-auto min-w-[320px] max-w-7xl flex-1 flex-shrink flex-col p-4'}>
+          <main className={'m-auto min-w-[300px] max-w-7xl flex-1 flex-shrink flex-col p-4'}>
             {children}
           </main>
           <Footer />

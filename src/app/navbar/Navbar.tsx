@@ -13,15 +13,15 @@ export const Navbar = async () => {
   const session = await getServerSession(authOptions)
 
   return (
-    <div className={'navbar bg-base-100'}>
+    <div className={'navbar flex flex-wrap justify-center bg-base-100'}>
       <div className={'flex-1'}>
         <Link className={'btn btn-ghost text-xl'} href={'/'}>
           <Image alt={'ecommerce logo'} height={40} src={logo} width={40} />
-          EcommercE
+          <span className={'hidden sm:inline'}>EcommercE</span>
         </Link>
       </div>
-      <div className={'flex-none gap-3.5'}>
-        <SearchForm />
+      <SearchForm />
+      <div className={'gap-3.5'}>
         <ShoppingCartButton cart={cart} />
         <UserMenuButton session={session} />
       </div>
