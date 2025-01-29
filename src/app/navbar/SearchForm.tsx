@@ -2,13 +2,23 @@ import { FormSubmitButton } from '@/components/FormSubmitButton'
 import { SearchFormReset } from '@/components/SeachFormReset'
 import Form from 'next/form'
 
-export const SearchForm = () => {
+type Props = {
+  query?: string
+}
+
+export const SearchForm = ({ query }: Props) => {
   return (
     <Form action={'/'} className={'search-form'} scroll={false}>
       <label className={'input input-bordered flex w-full min-w-80 items-center gap-2'}>
-        <input className={'grow'} name={'query'} placeholder={'Search'} type={'text'} />
+        <input
+          className={'grow'}
+          defaultValue={query}
+          name={'query'}
+          placeholder={'Search'}
+          type={'text'}
+        />
         <div className={'flex items-center gap-2'}>
-          <SearchFormReset />
+          {query && <SearchFormReset />}
           <FormSubmitButton className={'btn-sm rounded-full'}>
             <svg
               viewBox={'0 0 50 50'}
