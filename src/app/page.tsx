@@ -37,6 +37,12 @@ export default async function Home({ searchParams }: Props) {
     },
   })
 
+  if (products.length === 0) {
+    return (
+      <div className={'flex h-full items-center justify-center text-4xl'}>Products not found</div>
+    )
+  }
+
   return (
     <>
       <Navbar query={query} />

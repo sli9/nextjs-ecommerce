@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 
 import Footer from '@/app/footer/Footer'
+import { Navbar } from '@/app/navbar/Navbar'
 import { Geist, Geist_Mono } from 'next/font/google'
 
 import './globals.css'
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={`flex h-screen flex-col ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SessionProvider>
+          <Navbar />
           <main className={'m-auto min-w-[320px] max-w-7xl flex-1 flex-shrink flex-col p-4'}>
             {children}
           </main>
